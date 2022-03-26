@@ -1,0 +1,35 @@
+* {
+    font-family: Tahoma;
+    font-size: 11pt;
+    
+}
+
+th {
+    padding: 10px;
+    font-size: 13px;
+    background: rgb(0, 60, 255);
+    color: white;
+}
+
+input {
+  
+    margin: 5px;
+	padding: 5px;
+	border: 2px dotted aqua;
+	background: #f0f8ff;
+}
+
+table {
+    border: 1px solid red;
+    border-collapse: collapse;
+    background: rgb(152, 192, 236);
+    
+}
+
+button {
+    border: 1px solid green;
+    background: rgb(45, 67, 192);
+    padding: 5px;
+    color: white;
+
+}

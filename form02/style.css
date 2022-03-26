@@ -1,0 +1,33 @@
+* {
+    font-family: Tahoma;
+    font-size: 11pt;
+}
+
+th {
+    padding: 10px;
+    font-size: 13px;
+    background: red;
+    color: white;
+}
+
+td {
+    padding: 5px;
+}
+
+input {
+    padding: 5px;
+    width: 270px;
+}
+
+table {
+    border: 1px solid red;
+    border-collapse: collapse;
+    background: url(../form02/images/bgbottom_yellow.jpg) repeat-x left bottom;
+}
+
+button {
+    border: 1px solid green;
+    background: red;
+    padding: 5px;
+
+}

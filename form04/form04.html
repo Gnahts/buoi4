@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>FORM 04</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+	<script src="check.js"></script>
+</head>
+
+<body>
+	<form action="#" method="post">
+		<table border="0" width="400" align="center">
+			<tr>
+				<th colspan="2">THÔNG TIN ĐĂNG KÝ</th>
+			</tr>
+			<tr>
+				<td width "200">Họ và tên:</td>
+				<td><input type="text" name="HoTen"></td>
+			</tr>
+			<tr>
+				<td>Ngày sinh:</td>
+				<td>
+					<select name="Ngay">
+						<option value="">Ngày</option>
+						<script>
+							for(var i=1; i<=31; i++)
+							{
+								document.write('<option>'+i+'</option>')
+							}
+						</script>
+					</select>
+					
+					<select name="Thang">
+						<option value="">Tháng</option>
+						<script>
+							for(var i=1; i<=12; i++)
+							{
+								document.write('<option>'+i+'</option>')
+							}
+						</script>
+					</select>
+					
+					<select name="Nam">
+						<option value="">Năm</option>
+						<script>
+							var d = new Date();
+							var namHT = d.getFullYear();
+							for(var i=1970; i<=namHT; i++)
+							{
+								document.write('<option>'+i+'</option>')
+							}
+						</script>
+					</select>
+				</td>
+			</tr>
+<tr>
+				<td>Giới tính:</td>
+				<td>
+					<input type="radio" name="GioiTinh" value="Nam" checked>Nam
+					<input type="radio" name="GioiTinh" value="Nữ">Nữ
+					<input type="radio" name="GioiTinh" value="Chưa rõ">Chưa rõ
+				</td>
+			</tr>
+<tr>
+				<td>Nghề nghiệp:</td>
+				<td>
+					<select name="NgheNghiep">
+						<option value="">--Chọn--</option>
+						<option>Luật sư</option>
+						<option>Kỹ sư</option>
+						<option>Bác sĩ</option>
+						<option>Giáo viên</option>
+						<option selected>Sinh viên</option>
+						<option>Nghề khác</option>
+					</select>
+				</td>
+			</tr>
+<tr>
+				<td>Ghi chú:</td>
+				<td><textarea name="GhiChu"></textarea></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>
+					<button>Đăng ký</button>
+					<button type="reset">Xóa làm lại</button>
+				</td>
+			</tr>
+</table>
+	</form>
+</body>
+
+</html>
